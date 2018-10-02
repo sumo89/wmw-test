@@ -1,4 +1,169 @@
 body{
-    background-color: red;
-
+    .body-wrapper{
+        .header-bar-wrap{
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+            height: 3em;
+            .currency-wrap{
+                width: 25%;
+                text-align: center;
+                float: left;
+                .currency{
+                    width: 3em;
+                    display: inline-block;
+                    border: 1px solid black;
+                    padding: 0.3em;
+                    margin-top: 0.6em;
+                    margin-left: 1em;
+                }
+            }
+            .header-text{
+                width: 50%;
+                text-align: center;
+                line-height: 3em;
+                float: left;
+            }
+            .country-select{
+                float: right;
+                width: 12%;
+                p{
+                    float: left;
+                    margin: unset;
+                    line-height: 3em;
+                }
+                .down-icon{
+                    background-image: url(/assets/icons/down.svg);
+                    height: 3em;
+                    width: 1em;
+                    display: inline-block;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-left: 1em;
+                }
+            }
+        }
+        .header-menu-wrap{
+            display: block;
+            width: 100%;
+            background-color: lightcoral;
+            height: 6em;
+            .menu-image{
+                background-image: url(/assets/images/Large.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 3em;
+                float: left;
+                width: 15%;
+                margin-top: 1.5em;
+            }
+            .menu-options-wrap{
+                width: 70%;
+                height: 6em;
+                float: left;
+                text-align: center;
+                .option{
+                    display: inline-block;
+                    line-height: 6em;
+                    margin: 0 1.5em;
+                    cursor: pointer;
+                }
+            }
+            .menu-icons-wrap{
+                width: 15%;
+                height: 6em;
+                float: right;
+                .icon{
+                    cursor: pointer;
+                    height: 1.5em;
+                    width: 1.5em;
+                    display: inline-block;
+                    margin-top: 1.8em;
+                    margin-left: 0.2em;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                .icon-search{
+                    background-image: url(/assets/icons/search.svg);
+                }
+                .icon-profile{
+                    background-image: url(/assets/icons/profile.svg);
+                }
+                .icon-likes{
+                    background-image: url(/assets/icons/heart.svg);
+                }
+                .icon-cart{
+                    background-image: url(/assets/icons/bag.svg);
+                }
+            }
+        }
+        .gallery-wrap{
+            display: block;
+            width: 100%;
+            background-color: lightgrey;
+            height: 35em;
+            .slick-prev{
+                left: 5%;
+                z-index: 2;
+                &::before{
+                    content: '';
+                    background-image: url(/assets/icons/back.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 1.5em;
+                    width: 1.5em;
+                    display: block;
+                }
+            }
+            .slick-next{
+                right: 5%;
+                z-index: 2;
+                &::before{
+                    content: '';
+                    background-image: url(/assets/icons/forward.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 1.5em;
+                    width: 1.5em;
+                    display: block;
+                }
+            }
+            .slick-list{
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                .slick-track{
+                    height: 100%;
+                }
+            }
+            .slick-dots{
+                bottom: 2em;
+                z-index: 2;
+                li{
+                    margin: unset;
+                }
+                button{
+                    &::before{
+                        color: #fafafa;
+                        font-size: 12px;
+                    }
+                }
+                .slick-active button::before{
+                    font-size: 16px;
+                }
+            }
+            .gallery-image{
+                display: inline-block;
+                background-image: url(/assets/images/Slider/Background.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
 }

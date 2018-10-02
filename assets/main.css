@@ -1,3 +1,163 @@
-body {
-  background-color: red;
+body .body-wrapper .header-bar-wrap {
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+  height: 3em;
+}
+body .body-wrapper .header-bar-wrap .currency-wrap {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+body .body-wrapper .header-bar-wrap .currency-wrap .currency {
+  width: 3em;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.3em;
+  margin-top: 0.6em;
+  margin-left: 1em;
+}
+body .body-wrapper .header-bar-wrap .header-text {
+  width: 50%;
+  text-align: center;
+  line-height: 3em;
+  float: left;
+}
+body .body-wrapper .header-bar-wrap .country-select {
+  float: right;
+  width: 12%;
+}
+body .body-wrapper .header-bar-wrap .country-select p {
+  float: left;
+  margin: unset;
+  line-height: 3em;
+}
+body .body-wrapper .header-bar-wrap .country-select .down-icon {
+  background-image: url(/assets/icons/down.svg);
+  height: 3em;
+  width: 1em;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 1em;
+}
+body .body-wrapper .header-menu-wrap {
+  display: block;
+  width: 100%;
+  background-color: lightcoral;
+  height: 6em;
+}
+body .body-wrapper .header-menu-wrap .menu-image {
+  background-image: url(/assets/images/Large.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 3em;
+  float: left;
+  width: 15%;
+  margin-top: 1.5em;
+}
+body .body-wrapper .header-menu-wrap .menu-options-wrap {
+  width: 70%;
+  height: 6em;
+  float: left;
+  text-align: center;
+}
+body .body-wrapper .header-menu-wrap .menu-options-wrap .option {
+  display: inline-block;
+  line-height: 6em;
+  margin: 0 1.5em;
+  cursor: pointer;
+}
+body .body-wrapper .header-menu-wrap .menu-icons-wrap {
+  width: 15%;
+  height: 6em;
+  float: right;
+}
+body .body-wrapper .header-menu-wrap .menu-icons-wrap .icon {
+  cursor: pointer;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  margin-top: 1.8em;
+  margin-left: 0.2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .body-wrapper .header-menu-wrap .menu-icons-wrap .icon-search {
+  background-image: url(/assets/icons/search.svg);
+}
+body .body-wrapper .header-menu-wrap .menu-icons-wrap .icon-profile {
+  background-image: url(/assets/icons/profile.svg);
+}
+body .body-wrapper .header-menu-wrap .menu-icons-wrap .icon-likes {
+  background-image: url(/assets/icons/heart.svg);
+}
+body .body-wrapper .header-menu-wrap .menu-icons-wrap .icon-cart {
+  background-image: url(/assets/icons/bag.svg);
+}
+body .body-wrapper .gallery-wrap {
+  display: block;
+  width: 100%;
+  background-color: lightgrey;
+  height: 35em;
+}
+body .body-wrapper .gallery-wrap .slick-prev {
+  left: 5%;
+  z-index: 2;
+}
+body .body-wrapper .gallery-wrap .slick-prev::before {
+  content: '';
+  background-image: url(/assets/icons/back.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1.5em;
+  width: 1.5em;
+  display: block;
+}
+body .body-wrapper .gallery-wrap .slick-next {
+  right: 5%;
+  z-index: 2;
+}
+body .body-wrapper .gallery-wrap .slick-next::before {
+  content: '';
+  background-image: url(/assets/icons/forward.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1.5em;
+  width: 1.5em;
+  display: block;
+}
+body .body-wrapper .gallery-wrap .slick-list {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+body .body-wrapper .gallery-wrap .slick-list .slick-track {
+  height: 100%;
+}
+body .body-wrapper .gallery-wrap .slick-dots {
+  bottom: 2em;
+  z-index: 2;
+}
+body .body-wrapper .gallery-wrap .slick-dots li {
+  margin: unset;
+}
+body .body-wrapper .gallery-wrap .slick-dots button::before {
+  color: #fafafa;
+  font-size: 12px;
+}
+body .body-wrapper .gallery-wrap .slick-dots .slick-active button::before {
+  font-size: 16px;
+}
+body .body-wrapper .gallery-wrap .gallery-image {
+  display: inline-block;
+  background-image: url(/assets/images/Slider/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
