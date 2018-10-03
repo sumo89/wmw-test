@@ -86,6 +86,7 @@ body .body-wrapper .header-menu-wrap {
   position: relative;
 }
 body .body-wrapper .header-menu-wrap .mobile-menu {
+  display: none;
   height: 2em;
   width: 2em;
   background-image: url(/assets/mobile/elements/ic_drawer.svg);
@@ -489,6 +490,9 @@ body .body-wrapper.mobile .header-bar-wrap:not(.mobile-header) .header-text {
 }
 body .body-wrapper.mobile .header-menu-wrap {
   height: 5.5em;
+}
+body .body-wrapper.mobile .header-menu-wrap .mobile-menu {
+  display: block;
 }
 body .body-wrapper.mobile .header-menu-wrap .menu-image {
   width: 100%;
