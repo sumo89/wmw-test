@@ -5,6 +5,18 @@ $(document).ready(function(){
         slidesToShow: 1
     });
 
+    function checkWindowWidth(){
+        var windowWidth = $(window).width();
+        if (windowWidth <= 650){
+            $('.body-wrapper').addClass('mobile');
+        }
+    };
+    checkWindowWidth();
+
+    $(window).resize( function(){
+        checkWindowWidth();
+    });
+
     var itemCost = 60.00;
 
     $(document).on('click', function(event){
@@ -20,7 +32,7 @@ $(document).ready(function(){
             $('.'+ dataName +'-popup').addClass('showing');
         }
         else if ( target.parent().hasClass('option') ){
-            $('.cart-wrap').removeClass('showing');
+            $('.popups').removeClass('showing');
             $('.cart-wrap').removeClass('showing');
             var dataName = target.parent().attr('data');
             $('.'+ dataName +'-popup').addClass('showing');
@@ -34,8 +46,6 @@ $(document).ready(function(){
             $('.cart-wrap').removeClass('showing');
         }
     })
-
-
 
     $('.plus-symbol').click(function(event){
         var target = $(event.target).parents()[0];
@@ -60,5 +70,17 @@ $(document).ready(function(){
         $(cost).find('.product-amount span').text(newCost);
     })
 
+    var menuIsShowing = false;
+    $('.mobile-menu').click(function(){
+        if (!menuIsShowing){
+            $('.gallery-wrap').addClass('move-down');
+            $('.gallery-text-wrap').addClass('move-down');
+            menuIsShowing = true;
+        }
+        else {
+            $('.move-down').removeClass('move-down')
+            menuIsShowing = false;
+        }
+    });
 
   });
