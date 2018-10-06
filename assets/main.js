@@ -9,6 +9,9 @@ $(document).ready(function(){
         var windowWidth = $(window).width();
         if (windowWidth <= 650){
             $('.body-wrapper').addClass('mobile');
+        } 
+        else {
+            $('.body-wrapper').removeClass('mobile')
         }
     };
     checkWindowWidth();
