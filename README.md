@@ -1,8 +1,11 @@
-Run `npm install`
+Clone this repo,
 
-Create the CSS file with `grunt less`
+In the terminal cd into the folder,
 
-Can use `grunt watch` to set a watcher if you want to change any of the LESS
+run `npm install`,
 
-Run a local server with `grunt serve`, it will be on port 9001 by default
+then run `grunt less && grunt serve`,
 
+this will start a local server on port 9001,
+
+In your browser to go http://localhost:9001/
